@@ -6,9 +6,11 @@
 
 library(plyr)
 library(dplyr)
+library(stringr)
 
 ra <-function(){
-  setwd('C:/Users/J/Documents/R/GettingClean/data/UCI HAR Dataset')
+#  setwd('C:/Users/J/Documents/R/GettingClean/data/UCI HAR Dataset')
+  setwd('D:/R/GettingClean/data/UCI HAR Dataset')
   feat <- read.table('features.txt')
   activity <- read.table('activity_labels.txt')
   subject_test <- read.table('test/subject_test.txt')
